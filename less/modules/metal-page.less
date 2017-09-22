@@ -1,0 +1,271 @@
+.header-sublist.metal{
+  display: block;
+  text-align: center;
+  .header-sublist__link{
+    letter-spacing: 0.6px;
+  }
+}
+.header-sublist__item.metal{
+  &:nth-of-type(1){
+    margin-left: -5px;
+  }
+  &:nth-of-type(2){
+    margin-left: 33px;
+  }
+  &:nth-of-type(3){
+    margin-left: 39px;
+  }
+  &:nth-of-type(4){
+    margin-left: 25px;
+  }
+  &:nth-of-type(5){
+    margin-left: 24px;
+  }
+  &:nth-of-type(6){
+    margin-left: 13px;
+  }
+}
+
+.visible-md,
+.visible-xs{
+  display: none;
+}
+
+.metal-h1{
+  color: @darkBlue;
+  font-family: @surcoBookRegular;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 43px;
+}
+
+.ideal-parking__block{
+  background-image: url("@{rootUrl}background-patterns.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 169px;
+}
+.ideal-parking__block-segment{
+  font-size: 24px;
+  font-family: @surcoBook !important;
+  white-space: pre-line;
+  line-height: 1.47;
+  letter-spacing: 1px;
+}
+
+.projecting-block-metal.blue-bg{
+  background-image: url("@{rootUrl}background-blue-metal-page.png");
+  margin-top: 0;
+  padding-top: 150px;
+  padding-bottom: 88px;
+}
+
+.parking-schemes__block {
+  padding-top: 19px;
+}
+
+.metal-h2{
+  color: @darkBlue;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.parking-schemes__heading{
+    color: @darkBlue;
+    white-space: pre-line;
+    font-family: @magistralC  !important ;
+    margin-left: -188px;
+    margin-top: -27px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 45px;
+    text-transform: none;
+}
+
+.parking-schemes__heading.right {
+  margin-left: -116px;
+}
+
+.parking-scheme__img-wrapper {
+  padding: 0 0 0 49px;
+}
+
+.parking-schemes__description{
+  font-family: @surcoBook  !important;
+  font-size: 24px;
+  white-space: pre-line;
+  margin-top: 61px;
+  padding-left: 50px;
+  letter-spacing: 1px;
+}
+
+.parking-schemes__description-number{
+  font-size: 48px;
+}
+
+.parking-modules__heading{
+  text-transform: uppercase;
+  color: @darkBlue;
+  margin-top: 69px;
+  text-align: center;
+  font-weight: bold;
+  font-family: @magistralC !important;
+}
+
+.parking-modules__img-wrapper{
+  text-align: center;
+}
+.h4.metal{
+  font-family: @surcoBook;
+  font-weight: bold;
+  font-size: 24px;
+  margin-top: 19px;
+  margin-left: 49px;
+  letter-spacing: 1.5px;
+}
+
+.parking-modules__item{
+  font-family: @surcoBook;
+  font-size: 24px;
+  list-style: none;
+  display: block;
+  letter-spacing: 0.9px;
+  &:before{
+    content: "";
+    background-image: url("@{rootUrl}spritesheet.png") ;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-position: -604px -5px;
+    margin: 0 17px 0 4px;
+  }
+}
+
+.footer.metal {
+  margin-top: 76px;
+}
+
+
+@media (max-width:1440px) {
+  .header-sublist__item.metal{
+    text-align: center;
+    &:nth-of-type(1){
+      margin-left: 0;
+    }
+    &:nth-of-type(2){
+      margin-left: 10px;
+    }
+    &:nth-of-type(3){
+      margin-left: 10px;
+    }
+    &:nth-of-type(4){
+      margin-left: 10px;
+    }
+    &:nth-of-type(5){
+      margin-left: 10px;
+    }
+    &:nth-of-type(6){
+      margin-left: 10px;
+    }
+  }
+  .parking-schemes__heading,
+  .parking-schemes__heading.right{
+    margin-left: 0;
+  }
+
+  .parking-scheme__img-wrapper{
+    padding: 0;
+    img{
+      height: 815px;
+    }
+  }
+}
+
+
+@media (max-width:1024px) {
+  .header-sublist.metal {
+    height: 100px;
+    white-space: normal;
+  }
+
+  .visible-md {
+    display: inline-block;
+  }
+
+  .ideal-parking__block-segment,
+  .parking-schemes__description,
+  .parking-modules__item {
+    font-size: 20px;
+    white-space: normal;
+  }
+
+  .parking-schemes__description {
+    white-space: pre-line;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .parking-schemes__heading,
+  .parking-modules__heading {
+    white-space: normal;
+    font-size: 24px;
+  }
+
+  .parking-schemes__heading {
+    margin-top: 20px;
+  }
+
+  .parking-scheme__img-wrapper {
+    text-align: center;
+    img{
+      height: auto;
+    }
+  }
+}
+
+@media (max-width:580px) {
+  .header-sublist__item.metal {
+    margin-top: 10px;
+  }
+
+  .parking-schemes__heading{
+    margin-top: 20px;
+  }
+
+  .parking-scheme__img-wrapper,
+  .parking-schemes__description{
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width:520px){
+  .visible-md {
+    display: none;
+  }
+
+  .header-sublist.metal {
+    height: 150px;
+  }
+
+  .header-sublist__link {
+    letter-spacing: 0;
+  }
+
+  .header-sublist__item.metal {
+    display: block;
+    margin-top: 0;
+  }
+
+  .ideal-parking__block-segment,
+  .parking-schemes__description,
+  .parking-modules__item{
+    font-size: 16px;
+  }
+}

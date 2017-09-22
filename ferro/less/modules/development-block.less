@@ -1,0 +1,120 @@
+.development-block{
+  background-image: url("@{rootUrl}development-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 137px;
+  padding-bottom: 113px;
+  margin-top: 28px;
+  .h1{
+    color: @darkBlue;
+    text-align: center;
+  }
+}
+
+.development-slider__wrapper{
+  margin-top: 42px;
+}
+
+.development-slider__slide{
+  position: relative;
+}
+
+.development-slider{
+  .slick-slide{
+    outline: none;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.development-slider{
+  .slick-prev,.slick-next{
+    top: 44%;
+  }
+  .slick-prev{
+    width: 0;
+    left: -76px;
+    z-index: 200;
+    &:before{
+      content: "";
+      background-image: url("@{rootUrl}spritesheet.png");
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 42px;
+      height: 90px;
+      background-position: -631px -5px;
+    }
+
+  }
+  .slick-next{
+    right: -22px;
+    width: 0;
+    z-index: 200;
+    &:before{
+      content: "";
+      background-image: url("@{rootUrl}spritesheet.png");
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 42px;
+      height: 90px;
+      background-position: -683px -5px;
+    }
+  }
+}
+
+
+.development-slider__slide-name{
+  font-size: 24px;
+  color: #00378a;
+  font-family: @surcoBook;
+  display: block;
+  letter-spacing: 0.5px;
+  margin-left: -13px;
+  letter-spacing: 0.5px;
+  margin-bottom: 29px;
+  margin-top: 38px;
+  text-align: center;
+}
+
+.development-slider__slide-address{
+  white-space: pre-line;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  font-family: 'Bw Surco DEMO Book';
+  display: block;
+  margin-top: 48px;
+  margin-left: 18px;
+  line-height: 1.3;
+}
+
+
+@media (max-width:1880px) {
+  .development-slider {
+    .slick-prev {
+      left: 21px;
+    }
+    .slick-next {
+      right: 65px;
+    }
+  }
+}
+
+@media (max-width:520px) {
+  .development-block{
+    .h1{
+      font-size: 24px;
+    }
+  }
+  .development-slider__slide-address,
+  .development-slider__slide-name{
+    font-size: 16px;
+  }
+
+  .development-slider__slide-address {
+    text-align: center;
+    margin-left: 0;
+
+  }
+
+}
+

@@ -1,0 +1,275 @@
+//[class*="pure-"],
+//[pure^="pure"]{
+//  font-family: @surcoBook !important;
+//}
+
+
+h1  , .h1 {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 44px;
+  color: #fff;
+  letter-spacing: 2px;
+  line-height: 57px;
+  white-space:pre-line;
+}
+
+h2, .h2{
+  display: block;
+  font-weight: normal;
+  font-size: 44px;
+  letter-spacing: 1.6px;
+  line-height: 57px;
+  white-space:pre-line;
+}
+
+.rect_background{
+  display: inline-block;
+  .square(246px);
+  margin: 0 12px 0 90px;
+  background-color: rgba(10, 10, 10, 0.7);
+  position: relative;
+  text-align: center;
+  .transform(rotate(45deg));
+  .transition(0.9s all ease);
+  a{
+    text-decoration: none;
+    display: block;
+  }
+  [class*="icon"],[icon^="icon"]{
+    margin-top: 50px;
+    margin-right: 90px;
+    .transform(rotate(-45deg));
+  }
+  &:hover{
+    background-color: rgba(10, 10, 10, 0.9) ;
+  }
+}
+
+.rect_background_top{
+  padding: 2px 18px 4px 0;
+  .rect_background:first-of-type {
+    .info-block__text {
+      top: 5%;
+      left: 5%;
+    }
+  }
+}
+.rect_background_bottom{
+  margin: -7% 18px 0 0;
+  .info-block__text{
+    top: 34%;
+    padding: 0 0 0 8px;
+  }
+}
+
+.info-block{
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+}
+
+.info-block__text {
+  position: absolute;
+  top: 16%;
+  left: 7.5%;
+  padding: 4% 2.8% 28% 0;
+  display: block;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  width: 90%;
+  white-space: pre-line;
+  letter-spacing: 1px;
+  .transform(rotate(-45deg));
+  z-index: 10;
+}
+
+.triangle{
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.triangle-right{
+  border-width: 0 0 70px 1920px;
+}
+
+.learn-more{
+  display: block;
+  color: @darkBlue;
+  font-size: 24px;
+  margin: 47px 0 0 -9px;
+  letter-spacing: 1px;
+  .transition(all 0.5s ease);
+  span{
+    margin-right: 26px;
+    vertical-align: middle;
+  }
+  &:hover{
+    text-decoration: none;
+  }
+}
+.learn-more.blue-bg{
+  color: #fff;
+  .sprite{
+    margin-left: 7px;
+  }
+}
+
+.calc-pdf{
+  position: absolute;
+  top: 33px;
+  right: -107px;
+  a{
+    display: inline-block;
+    float: left;
+    white-space: initial;
+    margin-right: 20px;
+    &:hover >.calc-pdf__comment{
+      text-decoration: none;
+    }
+  }
+  [class*="sprite"]{
+    margin-top: 10px;
+  }
+}
+.calc-pdf__comment{
+  display: inline-block;
+  color: #000;
+  font-family: @surcoBook;
+  font-size: 24px;
+  text-decoration: underline;
+  white-space: pre-line;
+  vertical-align: top;
+  margin-left: 22px;
+  margin-top: 8px;
+  line-height: 1;
+  letter-spacing: 0.5px;
+
+}
+
+.calc-pdf.blue-bg{
+  top: 32px;
+  right: -90px;
+  a{
+    &:first-of-type{
+      margin-right: 68px;
+    }
+  }
+}
+
+.calc-pdf__comment.blue-bg{
+  color: #fff;
+}
+
+.calc-pdf.pb-transport {
+  top: 33px;
+  right: -104px;
+  a {
+    &:first-of-type {
+      margin-right: 39px;
+    }
+  }
+}
+
+.calc-pdf__comment.pb-transport{
+  margin-left: 32px;
+}
+
+@media (max-width: 1860px) {
+  .calc-pdf,
+  .calc-pdf.pb-transport{
+    right: 0;
+  }
+
+  .calc-pdf__comment {
+    margin-left: 15px;
+  }
+
+  .calc-pdf.blue-bg {
+    right: -10px;
+  }
+}
+
+@media (max-width: 1640px){
+  .calc-pdf,
+  .calc-pdf.blue-bg,
+  .calc-pdf.pb-transport{
+    top: 0;
+    a{
+      float: none;
+      display: block;
+    }
+  }
+  .rect_background {
+    [class*="icon"], [icon^="icon"] {
+      margin-top: 48px;
+      margin-right: 63px;
+    }
+  }
+}
+
+@media (max-width: 1440px){
+  .h1,
+  .h2{
+    font-size: 34px;
+  }
+
+  .calc-pdf.blue-bg {
+    right: 0 ;
+    top:0;
+  }
+
+  .rect_background {
+    [class*="icon"], [icon^="icon"] {
+      margin-top: 27px;
+      margin-right: 63px;
+    }
+  }
+}
+
+
+@media (max-width: 1024px){
+  .h1,
+  .h2{
+    font-size: 30px;
+  }
+
+  .calc-pdf,
+  .calc-pdf.blue-bg,
+  .calc-pdf.pb-transport{
+    position: relative;
+  }
+  .calc-pdf.blue-bg{
+    right: 0;
+    top: 0;
+  }
+}
+
+@media (max-width: 768px){
+  .h1,
+  .h2{
+    font-size: 24px;
+    line-height: 42px;
+  }
+
+  .learn-more{
+    font-size: 14px;
+    margin-top: 30px;
+    span{
+      margin-right: 6px;
+    }
+  }
+  .calc-pdf__comment{
+    font-size: 18px;
+    margin-top: 22px;
+  }
+
+}

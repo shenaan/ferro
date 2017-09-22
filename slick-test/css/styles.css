@@ -1,0 +1,106 @@
+.some-slider {
+  width: 800px;
+  margin: 0 auto;
+  background: #333;
+}
+.some-slider .item {
+  width: 800px;
+  height: 500px;
+  perspective: 1200px;
+  visibility: hidden;
+  opacity: 1 !important;
+  z-index: 950 !important;
+}
+.some-slider .item .inner {
+  width: 800px;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+.some-slider .item.slick-current {
+  visibility: visible;
+  z-index: 951 !important;
+}
+.some-slider .item.slick-current .inner {
+  -webkit-animation: scaleUp .7s ease both;
+  animation: scaleUp .7s ease both;
+}
+.some-slider .item.slick-prev {
+  visibility: visible;
+  z-index: 952 !important;
+}
+.some-slider .item.slick-prev .inner {
+  -webkit-animation: scaleDownUp .5s ease both;
+  animation: scaleDownUp .5s ease both;
+}
+/*
+* Transitions
+*/
+.pt-page-scaleUp {
+  -webkit-animation: scaleUp .7s ease both;
+  animation: scaleUp .7s ease both;
+}
+.pt-page-scaleDownUp {
+  -webkit-animation: scaleDownUp .5s ease both;
+  animation: scaleDownUp .5s ease both;
+}
+.pt-page-scaleDown {
+  -webkit-animation: scaleDown .7s ease both;
+  animation: scaleDown .7s ease both;
+}
+.pt-page-scaleUpDown {
+  -webkit-animation: scaleUpDown .5s ease both;
+  animation: scaleUpDown .5s ease both;
+}
+@-webkit-keyframes scaleUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+}
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+@-webkit-keyframes scaleDownUp {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+  }
+}
+@keyframes scaleDownUp {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@-webkit-keyframes scaleDown {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+}
+@keyframes scaleDown {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+@-webkit-keyframes scaleUpDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+  }
+}
+@keyframes scaleUpDown {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}

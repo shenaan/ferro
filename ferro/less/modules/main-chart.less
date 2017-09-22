@@ -1,0 +1,310 @@
+.main-chart{
+  .h1{
+    color: @darkBlue;
+    margin-top: 85px;
+    margin-bottom: 77px;
+    text-align: center;
+    }
+}
+
+.main-chart__list,
+.main-chart__title-wrapper,
+.main-chart__chart-wrapper{
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+.main-chart__list{
+  font-family: @surcoBook;
+  font-size: 24px;
+  margin: 2px 35px 0 0;
+  padding: 0;
+  line-height: 33px;
+  .sprite{
+    margin-right: 22px;
+  }
+}
+
+.main-chart__list-item{
+  list-style: none;
+  white-space: pre-line;
+  letter-spacing: 0.5px;
+  margin: 0 0 30px -2px;
+}
+
+.main-chart__chart-wrapper{
+  position: relative;
+  max-width: 58%;
+}
+
+.main-chart__title-wrapper{
+  .size(227px,204px);
+  background-image: url("@{rootUrl}rectangle-background.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 7px 33px 0 0;
+  padding: 41px 21px;
+  font-size: 30px;
+  white-space: pre-line;
+  color: @darkBlue;
+  line-height: 38px;
+  letter-spacing: 2px;
+}
+
+.main-chart__chart-holder{
+  height:65px;
+  background-image: url("@{rootUrl}steel-background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-x;
+  position:relative;
+  margin: 11px 0 0;
+  &:nth-of-type(1){
+    width:950px;
+  }
+  &:nth-of-type(2){
+    width: 333px;
+    display: inline-block;
+    margin: 0 0 -8px 0;
+    .chart-holder-bar{
+      background-image: url("@{rootUrl}concrete-background-part.png");
+    }
+    .chart-holder-bar__percent{
+      margin-left: 4%;
+    }
+  }
+}
+
+.chart-holder-bar{
+  background-image: url("@{rootUrl}concrete-background-full.png");
+  height:65px;
+  width:0;
+  transition:width 2s, background .2s;
+  position: relative;
+}
+
+.chart-holder-bar__percent{
+  font-size: 44px;
+  position: absolute;
+  .size(100%,100%);
+  color: #fff;
+  text-align: center;
+}
+
+.chart-holder-bar__label,
+.main-chart__map-label{
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-size: 24px;
+  display: block;
+  margin-bottom: 26px;
+  margin-top: 6px;
+}
+
+.main-chart__map{
+  display: inline-block;
+  float: right;
+  margin-right: 64px;
+  margin-top: -4px;
+}
+
+.main-chart__map-img:nth-of-type(1){
+  background-image: url("@{rootUrl}steel-map.png");
+}
+
+.main-chart__map-img:nth-of-type(3){
+  background-image: url("@{rootUrl}concrete-map.png");
+}
+
+.main-chart__map-img{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  .size(73px,69px);
+  margin-left: 35px;
+}
+
+.main-chart__map-label{
+  display: inline-block;
+  margin: 18px -1px 0 9px;
+  vertical-align: top;
+}
+
+@media(max-width:1700px) {
+  .main-chart__chart-wrapper {
+    max-width: 55%;
+  }
+  .main-chart__chart-holder:nth-of-type(1) {
+    max-width: 100%;
+  }
+  .main-chart__chart-holder:nth-of-type(2) {
+    max-width: 40%;
+    width: 35%;
+  }
+}
+@media(max-width:1600px) {
+  .main-chart{
+    .h1{
+      font-size: 40px;
+    }
+  }
+
+  .main-chart__list {
+    margin-right: 18px;
+    font-size: 22px;
+  }
+
+  .main-chart__title-wrapper {
+    .size(200px, 180px);
+    margin: 26px 18px 0 0;
+    font-size: 26px;
+    line-height: 29px;
+  }
+}
+@media(max-width:1400px) {
+  .main-chart{
+    .h1{
+      font-size: 34px;
+    }
+  }
+  .main-chart__chart-wrapper {
+    max-width: 49%;
+  }
+  .main-chart__map {
+    margin-right: 0;
+  }
+
+  .chart-holder-bar__percent {
+    font-size: 35px;
+    line-height: 2;
+  }
+
+  .main-chart__map-img {
+    .size(65px, 65px);
+    margin-left: 15px;
+  }
+}
+@media (max-width: 1250px) {
+  .main-chart{
+    .h1{
+      font-size: 27px;
+      margin-top: 65px;
+      margin-bottom: 65px;
+    }
+  }
+  .main-chart__title-wrapper {
+    .size(160px, auto);
+    font-size: 20px;
+    margin-top: 9px;
+  }
+  .main-chart__list {
+    font-size: 16px;
+    margin: -19px 18px 0 0;
+    line-height: 30px;
+  }
+  .main-chart__chart-holder {
+    height: 50px;
+  }
+  .chart-holder-bar {
+    height: 50px;
+  }
+  .chart-holder-bar__label, .main-chart__map-label {
+    font-size: 20px;
+  }
+  .chart-holder-bar__percent {
+    font-size: 25px;
+  }
+  .main-chart__map-img {
+    margin-left: 10px;
+    .size(50px, 50px);
+  }
+  .main-chart__map-label {
+    margin: 9px -1px 0 2px;
+  }
+}
+@media (max-width: 1024px) {
+  .main-chart {
+    .h1 {
+      font-size: 19px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      line-height: 2;
+    }
+  }
+  .main-chart__list {
+    line-height: 19px;
+  }
+  .main-chart__list-item {
+    white-space: normal;
+  }
+  .main-chart__chart-wrapper {
+    max-width: 74%;
+  }
+}
+@media (max-width: 768px) {
+  .main-chart {
+    .h1 {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .main-chart__list {
+    line-height: 16px;
+  }
+
+  .main-chart__title-wrapper {
+    .size(130px, auto);
+    font-size: 16px;
+    padding: 41px 14px;
+    line-height: 1;
+    white-space: normal;
+  }
+
+  .main-chart__chart-wrapper {
+    max-width: 69%;
+  }
+
+  .chart-holder-bar__label {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  .main-chart__map-label{
+    font-size: 16px;
+  }
+
+  .main-chart__map {
+    margin-top: 0;
+  }
+
+  .main-chart__chart-holder,
+  .chart-holder-bar {
+    height: 35px;
+  }
+  .chart-holder-bar__percent {
+    font-size: 17px;
+  }
+  .main-chart__map-img {
+    .size(35px, 35px);
+  }
+}
+@media (max-width: 520px){
+  .main-chart {
+    .h1 {
+      font-size: 18px;
+    }
+  }
+  .main-chart__title-wrapper{
+    display: none;
+  }
+  .main-chart__chart-wrapper {
+    display: none;
+  }
+  .main-chart__list {
+    font-size: 14px;
+  }
+}

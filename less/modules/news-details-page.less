@@ -1,0 +1,57 @@
+.h1.news-details{
+  color: @darkBlue;
+  text-align: center;
+  font-family: @surcoBookRegular;
+  letter-spacing: 1px;
+}
+
+.news-details__block{
+  max-width: 1303px;
+  margin-top: 79px;
+  .learn-more{
+    margin-top: 40px;
+    margin-bottom: 62px;
+    text-decoration: underline;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+.news-details__date{
+  display: block;
+  color: @darkBlue;
+  font-family: @surcoBookRegular;
+  font-weight:bold;
+  font-size: 24px;
+}
+.news-details__img-wrapper{
+  float: left;
+  margin: 42px 55px 55px 0;
+}
+
+.news-details__text{
+  font-family: @surcoBook;
+  font-size: 24px;
+  letter-spacing: 0.4px;
+  line-height: 32px;
+  white-space: pre-wrap;
+}
+
+
+@media (max-width:1450px) {
+  .news-details__block {
+    margin-top: 37px;
+  }
+}
+
+@media (max-width: 1024px){
+.news-page__block {
+  margin-top: 80px;
+  }
+}
+
+@media (max-width: 768px){
+  .news-details__img-wrapper {
+    float: none;
+  }
+}

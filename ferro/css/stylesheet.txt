@@ -1,0 +1,77 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow-icon {
+    width: 54px;
+    height: 15px;
+    background-position: -5px -5px;
+}
+
+.sprite-check-icon {
+    width: 63px;
+    height: 53px;
+    background-position: -69px -5px;
+}
+
+.sprite-check-icon-white {
+    width: 54px;
+    height: 53px;
+    background-position: -142px -5px;
+}
+
+.sprite-icon-calc-dark {
+    width: 52px;
+    height: 67px;
+    background-position: -206px -5px;
+}
+
+.sprite-icon-calc-light {
+    width: 52px;
+    height: 67px;
+    background-position: -268px -5px;
+}
+
+.sprite-icon-pdf-dark {
+    width: 48px;
+    height: 65px;
+    background-position: -330px -5px;
+}
+
+.sprite-icon-pdf-light {
+    width: 48px;
+    height: 65px;
+    background-position: -388px -5px;
+}
+
+.sprite-news-slider-rect-icon {
+    width: 69px;
+    height: 69px;
+    background-position: -446px -5px;
+}
+
+.sprite-news-slider-rect-icon-active {
+    width: 69px;
+    height: 69px;
+    background-position: -525px -5px;
+}
+
+.sprite-rect-icon {
+    width: 17px;
+    height: 17px;
+    background-position: -604px -5px;
+}
+
+.sprite-slider-control-left {
+    width: 42px;
+    height: 90px;
+    background-position: -631px -5px;
+}
+
+.sprite-slider-control-right {
+    width: 42px;
+    height: 90px;
+    background-position: -683px -5px;
+}

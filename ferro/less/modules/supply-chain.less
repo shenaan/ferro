@@ -1,0 +1,211 @@
+.supply-chain{
+  background-image: url("@{rootUrl}background-blue.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 704px;
+  width: 100%;
+  margin-top: 50px;
+  padding-top: 117px;
+  padding-bottom: 114px;
+  .h1{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 41px;
+  }
+  hr{
+    width: 100%;
+    background-color: #fff;
+    color: #fff;
+    margin-top: 0;
+  }
+}
+
+.supply-chain__block{
+  display: inline-block;
+  width: 22.5%;
+  float: left;
+  color: #fff;
+  text-align: center;
+}
+
+.supply-chain__block--price{
+  white-space: nowrap;
+  font-size:90px;
+  font-weight: bold;
+}
+
+.supply-chain__block--price-unit{
+  font-size: 43px;
+  font-weight: bold;
+  text-transform: lowercase;
+  margin-top: -6%;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.supply-chain__block--supplier{
+  font-family: @surcoBook;
+  font-size: 23px;
+  margin-top: 3%;
+  letter-spacing: 1px;
+  margin-left: 0;
+  line-height: 33px;
+}
+
+.supplier-name{
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-left: 0;
+  letter-spacing: 1px;
+}
+.supplier-description{
+  text-transform: lowercase;
+  white-space: nowrap;
+}
+
+.supply-chain__divider{
+  width: 16%;
+  float: left;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 166px;
+}
+
+
+@media(max-width: 1600px){
+  .supply-chain {
+    .h1 {
+      margin-bottom: 80px;
+    }
+  }
+  .supply-chain__block--price {
+    font-size: 70px;
+  }
+  .supply-chain__block--price-unit {
+    font-size: 30px;
+  }
+  .supply-chain__block--supplier {
+    font-size: 18px;
+  }
+  .supply-chain__divider {
+    margin-top: 123px;
+  }
+}
+@media(max-width: 1250px){
+  .supply-chain {
+    height: 650px;
+    .h1 {
+      font-size: 40px;
+    }
+  }
+  .supply-chain__block--price {
+    font-size: 55px;
+  }
+  .supply-chain__block--price-unit {
+    font-size: 25px;
+  }
+  .supply-chain__block--supplier {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  .supplier-description{
+    white-space: normal;
+  }
+  .supply-chain__divider {
+    margin-top: 97px;
+  }
+}
+@media(max-width: 1024px) {
+  .supply-chain {
+    height: 600px;
+    .h1 {
+      font-size: 35px;
+    }
+  }
+
+  .supply-chain__block--price {
+    font-size: 45px;
+  }
+
+  .supply-chain__block--price-unit {
+    font-size: 20px;
+  }
+
+  .supply-chain__block--supplier {
+    font-size: 15px;
+  }
+
+  .supply-chain__divider {
+    margin-top: 78px;
+  }
+}
+
+
+@media(max-width: 768px) {
+  .supply-chain {
+    height: 450px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .h1 {
+      font-size: 25px;
+      margin-bottom: 40px;
+    }
+  }
+  .supply-chain__block{
+    text-align: left;
+  }
+
+  .supply-chain__block--price {
+    font-size: 25px;
+  }
+
+  .supply-chain__block--price-unit {
+    font-size: 14px;
+  }
+
+  .supply-chain__block--supplier {
+    font-size: 12px;
+  }
+
+  .supplier-description {
+    font-size: x-small;
+  }
+
+  .supply-chain__divider {
+    visibility: hidden;
+  }
+}
+
+@media(max-width: 420px) {
+  .supply-chain {
+    .h1 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+  }
+  .supply-chain__block{
+    text-align: left;
+    display: block;
+    width: 100%;
+  }
+
+  .supply-chain__block--price {
+    font-size: 18px;
+  }
+
+  .supply-chain__block--price-unit {
+    font-size: 12px;
+    margin-top: 0;
+  }
+
+  .supply-chain__block--supplier {
+    font-size: 12px;
+  }
+
+
+  .supply-chain__divider {
+    display: none;
+  }
+}

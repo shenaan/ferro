@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="css/stitches-1.3.5.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <!--<![endif]-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div id="main">
+        <header id="header">
+            <div class="main-container clearfix">
+                <div class="pull-left ">
+                    <a href="index.html" class="header__logo">  </a>
+                </div>
+
+                <div class="pull-right">
+                    <nav class="header-nav">
+                        <ul class="header-list">
+                            <li class="header-list__item">
+                                <a href="company.html" class="header-list__link">Компания</a>
+                            </li>
+
+                            <li class="header-list__item"><a href="metal.html" class="header-list__link">Металлокаркас</a></li>
+                            <li class="header-list__item"><a href="development.html" class="header-list__link">Девелопмент</a></li>
+                            <li class="header-list__item"><a href="gallery.html" class="header-list__link active">Галерея</a></li>
+                            <li class="header-list__item"><a href="contacts.html" class="header-list__link">Контакты</a></li>
+                            <li class="header-list__item header-list__item-xs">
+                                <a href="tel:+ 7 495 740-48-22" class="header-info__phone">+ 7 495 740-48-22</a>
+                                <a href="#" class="header-info__link">Перезвоните мне</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <a href="" id="btn-mob"><span></span><span></span><span></span></a>
+
+                    <div class="header-info">
+                        <a href="tel:+ 7 495 740-48-22" class="header-info__phone">+ 7 495 740-48-22</a>
+                        <span class="icon-call"></span>
+                        <a href="javascript:;" class="header-info__link">Перезвоните мне</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="call-me__modal" id="call-me__modal">
+            <form class="modal-form">
+                <input type="text" placeholder="Ваше имя" class="input-field" name="contactMessage" required>
+                <input type="tel" placeholder="Ваш телефон" class="input-field" name="contactMessage" required>
+                <input type="submit" value="перезвоните мне" class="submit-btn">
+            </form>
+        </div>
+
+        <div class="main-container">
+            <h1 class="h1 gallery">ГАЛЕРЕЯ ПРОЕКТОВ ИЗ МЕТАЛЛОКАРКАСА</h1>
+            <div class="gallery-slider__wrapper">
+                <div class="gallery-slider">
+                    <div class="gallery__slide">
+                        <a data-fancybox="gallery-page-slider" href="img/gallery-slider-1.png"><img src="img/gallery-slider-1.png" alt="buildings from metal"></a>
+                    </div>
+                    <div class="gallery__slide">
+                        <a data-fancybox="gallery-page-slider" href="img/gallery-slider-2.png"><img src="img/gallery-slider-1.png" alt="buildings from metal"></a>
+                    </div>
+                </div>
+                <h2 class="h1 media-heading">ФОТО ЗДАНИЙ ИЗ МЕТАЛЛА</h2>
+            </div>
+
+            <div class="gallery-slider__wrapper">
+                <div class="gallery-slider">
+                    <div class="gallery__slide">
+                        <a data-fancybox="gallery-page-slider2" href="img/gallery-slider-1.png"><img src="img/gallery-slider-1.png" alt="buildings from metal"></a>
+                    </div>
+                    <div class="gallery__slide">
+                        <a data-fancybox="gallery-page-slider2" href="img/gallery-slider-2.png"><img src="img/gallery-slider-2.png" alt="buildings from metal"></a>
+                    </div>
+                </div>
+                <h2 class="h1 media-heading">ФОТО ФАСАДОВ ИЗ МЕТАЛЛА</h2>
+            </div>
+
+            <div class="video__wrapper">
+                    <!--<video poster="img/gallery-video-caption.png" class="gallery__video" id="gallery-video" controls>-->
+                        <!--<source src="" type="">-->
+                        <!--<source src="" type="">-->
+                        <!--Your browser does not support the video tag.-->
+                    <!--</video>-->
+                <a data-fancybox class="gallery__video" href="https://www.youtube.com/watch?v=gxt7BhtdKz8">
+                    <img src="img/gallery-video-caption.png" alt="video">
+                </a>
+                <h2 class="h1 media-heading">ВИДЕО О МЕТАЛЛОКАРКАСЕ</h2>
+            </div>
+
+             <div class="calc-pdf-gallery clearfix ">
+                    <a href="#" download="">
+                        <span class="sprite sprite-pdf-dark"></span>
+                        <span class="calc-pdf__comment">Презентация
+                                     общественных зданий
+                                     из металлокаркаса
+                        </span>
+                    </a>
+                    <a href="#">
+                        <span class="sprite sprite-calc-dark"></span>
+                        <span class="calc-pdf__comment">Расчет цены на
+                                      строительство зданий
+                                      из металлокаркаса
+                        </span>
+                    </a>
+                </div>
+        </div>
+
+    </div> <!--main-->
+    <footer class="footer">
+        <ul class="footer__menu">
+            <li class="footer__menu-item"><a href="company.html">Компания</a></li>
+            <li class="footer__menu-item"><a href="metal.html">Металлокаркас</a></li>
+            <li class="footer__menu-item"><a href="development.html">Девелопмент</a></li>
+            <li class="footer__menu-item"><a href="gallery.html">Галерея</a></li>
+            <li class="footer__menu-item"><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <div class="main-container">
+            <div class="footer__contacts-block pure-g">
+                <div class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3">
+                            <span class="footer-address">
+                                Центральный офис: Москва, Остоженка, 19 стр.1
+                                <a href="#">посмотреть на карте</a>
+                                Все права (С) 2017
+                            </span>
+                </div>
+                <div class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-3">
+                            <span class="footer-phone">
+                                +7 495-740-48-22
+                                <a href="javascript:;" class="footer__pop-up">Обратный звонок</a>
+                            </span>
+                </div>
+                <div class="pure-u-1-1 pure-u-sm-1-1 pure-u-md-1-3">
+                            <span class="footer-design">
+                                Разработка сайта
+                                Smartlab.ru</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/modernizr-2.0.6.min.js"></script>
+    <script data-main="js/stitches.js" src="js/stitches-1.3.5.min.js"></script>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
